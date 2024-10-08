@@ -1,0 +1,26 @@
+<p>laptop-add works!</p>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="bread-crumb">
+          <h3 title="Add Laptop">Add Laptop</h3>
+        </div>
+        <form (ngSubmit)="addLaptop()">
+          <div class="form-group">
+            <label for="brand">Brand</label>
+            <input type="text" id="brand" [(ngModel)]="newLaptop.brand" name="brand" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="model">Model</label>
+            <input type="text" id="model" [(ngModel)]="newLaptop.model" name="model" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" id="price" [(ngModel)]="newLaptop.price" name="price" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Laptop</button>
+        <a href="laptops/" class="btn btn-primary">View list</a>
+      </form>
+    </div>
+</div>
+</div>

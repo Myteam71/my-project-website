@@ -1,0 +1,26 @@
+<p>laptop-edit works!</p>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="bread-crumb">
+          <h3 title="Add Laptop">updateLaptop</h3>
+        </div>
+        <form (ngSubmit)="updateLaptop()">
+          <div class="form-group">
+            <label for="brand">Brand</label>
+            <input type="text" id="brand" [(ngModel)]="laptop.brand" name="brand" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="model">Model</label>
+            <input type="text" id="model" [(ngModel)]="laptop.model" name="model" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" id="price" [(ngModel)]="laptop.price" name="price" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Laptop</button>
+        <a href="/laptops/" class="btn btn-primary">View list</a>
+      </form>
+    </div>
+</div>
+</div>
